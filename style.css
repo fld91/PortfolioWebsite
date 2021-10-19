@@ -1,0 +1,222 @@
+html,body{
+    height: 100%;
+    width:100%;
+    margin: 0%;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F1F4F6;
+}
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/*Todo
+ask doubts about display flex,inline block, padding margin
+*/
+.header{
+       
+    width: 100%;
+    position: fixed;
+    padding: 10px ; 
+    padding-bottom: 30px;  
+    padding-right: 40px;    
+    display: flex;    
+    align-items: center;   
+    color:rgb(36, 24, 24);
+    background-color:#597FCA;
+}
+.logo {
+    font-size: 25px;
+    flex: 1;
+    font-weight: 600;
+}
+.header div{ /*this selects all div inside header tag  */
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.selected{
+    font-weight:bold ;
+    border-bottom: 5px solid black;
+    
+
+}
+.main{
+    background-color: #597FCA;
+    height: 450px;
+    width: 100%;
+    padding: 120px;
+    padding-left: 80;
+    padding-right: 80;
+    color: black;
+    
+    
+}
+/*.h1{
+    flex: 1;
+}*/
+/*.img1{
+    background-color: transparent;
+    opacity: 0.1;
+    width: 400;
+    height: 250;
+}
+remove h1 and display flex in div main */
+.hand{
+    display: inline-block;
+    animation: wiggle 0.4s infinite;
+}
+@keyframes wiggle{
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(10deg);}
+    50%{transform: rotate(0deg);}
+    75%{transform: rotate(-10deg);}
+    100%{transform: rotate(0deg);}
+}
+.mainheader{
+    color: black;
+    font-weight: 400;
+    font-size: 40px;
+   
+}
+.mainContent{
+    font-size: 25px;
+    max-width: 600px;
+    padding-top: 20px;  
+    padding-bottom: 20px; 
+
+}
+button{
+    
+    height:50px;
+    width:120px;
+    margin: 5px;
+    padding: 5px 5px;
+    font-weight: 700;
+    font-size: 15px;
+    border: 2px solid black;
+    text-transform: uppercase;
+    background: none;
+    cursor: pointer;
+    outline: 0;
+    border-radius: 10px;
+    
+}
+.btn{
+    width: 50px;
+
+}
+.skills{
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.skillscontent{
+    font-family: 'Raleway';
+    padding-bottom: 20px;
+    padding-top: 20px;
+    max-width: 600px;
+    margin: auto;/*makes element to the centre*/
+}
+.progress{
+    width: 300px;
+    height: 5px;
+    background-color: #597FCA;
+    border-radius: 3px;
+}
+.progressbar{
+    width: 70%;
+    height: 5px;
+    background-color:#2552AC;
+    border-radius: 3px;
+
+
+}
+.skillscontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    max-width: 900px ;
+}
+.liveactivityflex{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    max-width: 800px;
+    justify-content: space-evenly;
+    margin: auto;   
+
+}
+.miniactvity{
+    text-decoration: none;
+    font-weight: bold;
+    height: 150px;
+    width:200px;    
+    border-top: 8px #2552AC solid;
+    border-radius: 5px;
+    background-color: #829bcc;
+    margin-left: 10px;
+    box-shadow: 0px 2px 11px 1px rgba(0,0,0,0.58);
+-webkit-box-shadow: 0px 2px 11px 1px rgba(0,0,0,0.58);
+-moz-box-shadow: 0px 2px 11px 1px rgba(0,0,0,0.58);
+}
+.miniactstat{
+    font-size: 30px;
+    font-family: 'Raleway','sans-serif';
+}
+.projectContainerFlex{
+text-align: left  ;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+padding-top: 50px;
+align-items: top;
+}
+.project{
+    
+    width: 400px;
+    margin: 20px;  
+    background-color: #F1F4F6;
+     
+    
+}
+img{
+    width: 100%;
+    border-radius: 1px;
+   
+    
+    border-radius: 10px;
+}
+.innertext{
+    display: flex;
+    align-items: center;   
+    padding-bottom: 5px;
+
+}
+.pTitle{
+flex: 1;
+font-weight: 400;
+color: rgb(32, 32, 32);
+padding-bottom: 5px;
+}
+.pYear{
+    font-family: 'Roboto','sans-serif';
+    font-weight: 400;
+    color: rgba(65, 62, 62, 0.986);
+
+}
+.content{
+    height: 200px;
+    font-size: 17px;
+    color: rgb(53, 52, 52);
+    display: inline-block;
+
+}
+footer{
+    text-align: center;
+    color: rgb(97, 94, 94);
+}
+
+
